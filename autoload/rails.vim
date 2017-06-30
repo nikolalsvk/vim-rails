@@ -3437,9 +3437,6 @@ function! s:readable_alternate_candidates(...) dict abort
     if f =~ '\.coffee$'
       let suffix = '.coffee'
       let suffix_replacement = '_spec.coffee'
-    elseif f =~ '[A-Z][a-z]\+\.js$'
-      let suffix = '.js'
-      let suffix_replacement = 'Spec.js'
     else
       let suffix = '.js'
       let suffix_replacement = '_spec.js'
